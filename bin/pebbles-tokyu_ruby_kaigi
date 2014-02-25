@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require 'pebbles/tokyu_ruby_kaigi'
