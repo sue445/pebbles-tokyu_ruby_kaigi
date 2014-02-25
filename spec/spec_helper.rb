@@ -2,6 +2,7 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'pebbles/tokyu_ruby_kaigi'
 
 require 'rspec'
+require 'rspec/its'
 require 'delorean'
 
 # Requires supporting ruby files with custom matchers and macros, etc,

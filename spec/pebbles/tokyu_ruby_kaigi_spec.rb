@@ -35,6 +35,23 @@ describe Pebbles::TokyuRubyKaigi do
     end
   end
 
+  describe "#take" do
+    include Pebbles::TokyuRubyKaigi
+
+    subject{ take(limit) }
+
+    let(:limit){ 3 }
+
+    before do
+      time_travel_to "2014-03-01"
+    end
+
+    its(:count){ should == limit }
+    its([0]){ should == date("2014-03-29") }
+    its([1]){ should == date("2014-04-29") }
+    its([2]){ should == date("2014-06-29") }
+  end
+
   def date(str)
     Date.parse(str)
   end
