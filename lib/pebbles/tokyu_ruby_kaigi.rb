@@ -6,10 +6,15 @@ module Pebbles
   module TokyuRubyKaigi
     MEET_DAY = 29
 
+    # find next target day of TokyuRubyKaigi
+    # @return [Date]
     def find
       take(1).first
     end
 
+    # take target days of TokyuRubyKaigi
+    # @param limit
+    # @return [Array<Date>]
     def take(limit=10)
       tokyu_ruby_kaigi_dates = []
       meet_date = Date.today.day < MEET_DAY ? next_meet_date(Date.today) : next_meet_date(1.month.past)
