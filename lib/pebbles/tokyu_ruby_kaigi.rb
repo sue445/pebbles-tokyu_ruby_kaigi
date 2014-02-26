@@ -7,21 +7,16 @@ module Pebbles
     MEET_DAY = 29
 
     def find
-      meet_date = Date.today.day < MEET_DAY ? next_meet_date(Date.today) : next_meet_date(1.month.past)
-
-      loop do
-        return meet_date if meet_date.saturday? || meet_date.sunday? || holiday?(meet_date)
-        meet_date = next_meet_date(meet_date + 1.month)
-      end
+      take(1).first
     end
 
     def take(limit=10)
-      meet_dates = []
+      tokyu_ruby_kaigi_dates = []
       meet_date = Date.today.day < MEET_DAY ? next_meet_date(Date.today) : next_meet_date(1.month.past)
 
       loop do
-        meet_dates << meet_date if meet_date.saturday? || meet_date.sunday? || holiday?(meet_date)
-        return meet_dates if meet_dates.length == limit
+        tokyu_ruby_kaigi_dates << meet_date if meet_date.saturday? || meet_date.sunday? || holiday?(meet_date)
+        return tokyu_ruby_kaigi_dates if tokyu_ruby_kaigi_dates.length == limit
 
         meet_date = next_meet_date(meet_date + 1.month)
       end
