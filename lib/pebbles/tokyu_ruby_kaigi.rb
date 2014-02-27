@@ -8,14 +8,14 @@ module Pebbles
 
     # find next target day of TokyuRubyKaigi
     # @return [Date]
-    def find
+    def self.find
       take(1).first
     end
 
     # take target days of TokyuRubyKaigi
     # @param limit
     # @return [Array<Date>]
-    def take(limit=10)
+    def self.take(limit=10)
       tokyu_ruby_kaigi_dates = []
       meet_date = Date.today.day < MEET_DAY ? next_meet_date(Date.today) : next_meet_date(1.month.past)
 
@@ -28,7 +28,7 @@ module Pebbles
     end
 
     private
-    def next_meet_date(date)
+    def self.next_meet_date(date)
       date.change(day: MEET_DAY)
     rescue ArgumentError
       # there is not meet day in February
@@ -36,7 +36,7 @@ module Pebbles
       retry
     end
 
-    def holiday?(date)
+    def self.holiday?(date)
       GoogleHolidayCalendar::Calendar.new(country: "japanese", lang: "ja").holiday?(date)
     end
   end

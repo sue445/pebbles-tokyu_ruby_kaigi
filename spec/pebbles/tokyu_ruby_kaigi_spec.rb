@@ -4,9 +4,7 @@ describe Pebbles::TokyuRubyKaigi do
   end
 
   describe "#find" do
-    include Pebbles::TokyuRubyKaigi
-
-    subject{ find }
+    subject{ Pebbles::TokyuRubyKaigi.find }
 
     context "on Saturday" do
       before do
@@ -34,9 +32,7 @@ describe Pebbles::TokyuRubyKaigi do
   end
 
   describe "#take" do
-    include Pebbles::TokyuRubyKaigi
-
-    subject{ take(limit) }
+    subject{ Pebbles::TokyuRubyKaigi.take(limit) }
 
     let(:limit){ 3 }
 

@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'pebbles/tokyu_ruby_kaigi'
+require 'pebbles/tokyu_ruby_kaigi/cli'
+
+Pebbles::TokyuRubyKaigi::CLI.start(ARGV)
