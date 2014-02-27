@@ -1,6 +1,6 @@
 # Pebbles::TokyuRubyKaigi
 
-TODO: Write a gem description
+Find target day of TokyuRubyKaigi (http://qwik.jp/tokyurb/)
 
 ## Installation
 
@@ -18,11 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+$ tokyu_ruby_kaigi next
+2014/03/29(Sat)
+
+$ tokyu_ruby_kaigi take
+2014/03/29(Sat)
+2014/04/29(Tue)
+2014/06/29(Sun)
+2014/11/29(Sat)
+2015/03/29(Sun)
+2015/04/29(Wed)
+2015/08/29(Sat)
+2015/11/29(Sun)
+2016/04/29(Fri)
+2016/05/29(Sun)
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/pebbles-tokyu_ruby_kaigi/fork )
+1. Fork it ( https://github.com/sue445/pebbles-tokyu_ruby_kaigi/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
