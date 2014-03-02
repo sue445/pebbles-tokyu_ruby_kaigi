@@ -1,4 +1,4 @@
-# Pebbles::TokyuRubyKaigi [![Gem Version](https://badge.fury.io/rb/pebbles-tokyu_ruby_kaigi.png)](http://badge.fury.io/rb/pebbles-tokyu_ruby_kaigi) [![Build Status](https://travis-ci.org/sue445/pebbles-tokyu_ruby_kaigi.png)](https://travis-ci.org/sue445/pebbles-tokyu_ruby_kaigi)
+# Pebbles::TokyuRubyKaigi [![Gem Version](https://badge.fury.io/rb/pebbles-tokyu_ruby_kaigi.png)](http://badge.fury.io/rb/pebbles-tokyu_ruby_kaigi) [![Build Status](https://travis-ci.org/sue445/pebbles-tokyu_ruby_kaigi.png)](https://travis-ci.org/sue445/pebbles-tokyu_ruby_kaigi) [![Coverage Status](https://coveralls.io/repos/sue445/pebbles-tokyu_ruby_kaigi/badge.png)](https://coveralls.io/r/sue445/pebbles-tokyu_ruby_kaigi)
 
 Find target day of TokyuRubyKaigi (http://qwik.jp/tokyurb/)
 
