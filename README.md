@@ -2,6 +2,11 @@
 
 Find target day of TokyuRubyKaigi (http://qwik.jp/tokyurb/)
 
+## Definition of TokyuRubyKaigi
+
+* 29th day a.k.a Meet day (肉の日)
+* Holiday (Saturday, Sunday or National holiday)
+
 ## Installation
 
 Add this line to your application's Gemfile:
