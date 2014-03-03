@@ -10,7 +10,7 @@ module Pebbles
         puts "#{date.strftime("%Y/%m/%d(%a)")}"
       end
 
-      desc "take LIMIT", "show target days of TokyuRubyKaigi"
+      desc "take LIMIT", "show target days of TokyuRubyKaigi (default 10 days)"
       def take(limit=10)
         dates = Pebbles::TokyuRubyKaigi.take(limit)
         dates.each do |date|
