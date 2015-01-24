@@ -30,6 +30,12 @@ Or install it yourself as:
 ## Usage
 
 ```sh
+$ tokyu_ruby_kaigi --help
+Commands:
+  tokyu_ruby_kaigi help [COMMAND]  # Describe available commands or one specific command
+  tokyu_ruby_kaigi next            # show next target day of TokyuRubyKaigi
+  tokyu_ruby_kaigi take LIMIT      # show target days of TokyuRubyKaigi (default 10 days)
+
 $ tokyu_ruby_kaigi next
 2014/03/29(Sat)
 
