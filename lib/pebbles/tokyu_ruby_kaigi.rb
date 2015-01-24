@@ -21,14 +21,17 @@ module Pebbles
       meet_date = Date.today.day < MEET_DAY ? next_meet_date(Date.today) : next_meet_date(1.month.past)
 
       loop do
-        tokyu_ruby_kaigi_dates << meet_date if meet_date.saturday? || meet_date.sunday? || holiday?(meet_date)
-        return tokyu_ruby_kaigi_dates if tokyu_ruby_kaigi_dates.length == limit
+        tokyu_ruby_kaigi_dates << meet_date if meet_date.saturday? || meet_date.sunday? || meet_date.national_holiday?
+        break if tokyu_ruby_kaigi_dates.length == limit
 
         meet_date = next_meet_date(meet_date + 1.month)
       end
+
+      tokyu_ruby_kaigi_dates
     end
 
     private
+
     def self.next_meet_date(date)
       date.change(day: MEET_DAY)
     rescue ArgumentError
@@ -37,8 +40,5 @@ module Pebbles
       retry
     end
 
-    def self.holiday?(date)
-      date.national_holiday?
-    end
   end
 end
