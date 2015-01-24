@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.0.2] (https://github.com/sue445/pebbles-tokyu_ruby_kaigi/tree/v0.0.2)
+#### 2015/01/24
+- *Merged pull-request:* Use holiday\_japan gem [\#3](https://github.com/sue445/pebbles-tokyu_ruby_kaigi/pull/3) ([sue445](https://github.com/sue445))
+
+- *Merged pull-request:* Feature/tweak travis [\#2](https://github.com/sue445/pebbles-tokyu_ruby_kaigi/pull/2) ([sue445](https://github.com/sue445))
+
+- *Merged pull-request:* Add default setting to help of take command. [\#1](https://github.com/sue445/pebbles-tokyu_ruby_kaigi/pull/1) ([yui-knk](https://github.com/yui-knk))
+
 ## [v0.0.1] (https://github.com/sue445/pebbles-tokyu_ruby_kaigi/tree/v0.0.1)
 #### 2014/03/02
 
