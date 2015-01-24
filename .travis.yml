@@ -1,10 +1,12 @@
 language: ruby
 rvm:
-  - 2.0.0
-  - 2.1.0
-  - 2.1.1
+- 2.0.0
+- 2.1.0
+- 2.1.1
 branches:
   only:
-    - master
+  - master
 notifications:
   email: false
+  slack:
+    secure: A2NfkamFIfgKSrV3KFMW+vYsCt9H9WgXJf6A4T+aAi8d/2WjeXbl0jB7FYBT8ut1Xgi43TrmoqDqvWSv9ly7yc0qFfIG4dtb8THmUJ+P11UDWPQXt40IFX/zX8ueQs9MA8h1sgtPyvenM7pRpKG+r6ooRHErPcYpx0zCb6JbDhY=
