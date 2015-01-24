@@ -1,9 +1,10 @@
 require "pebbles/tokyu_ruby_kaigi/version"
-require "active_support/core_ext"
-require "google_holiday_calendar"
 
 module Pebbles
   module TokyuRubyKaigi
+    require "active_support/all"
+    require "holiday_japan"
+
     MEET_DAY = 29
 
     # find next target day of TokyuRubyKaigi
@@ -37,7 +38,7 @@ module Pebbles
     end
 
     def self.holiday?(date)
-      GoogleHolidayCalendar::Calendar.new(country: "japanese", lang: "ja").holiday?(date)
+      date.national_holiday?
     end
   end
 end
