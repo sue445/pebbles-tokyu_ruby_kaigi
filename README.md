@@ -5,7 +5,6 @@ Find target day of TokyuRubyKaigi (http://qwik.jp/tokyurb/)
 [![Gem Version](https://badge.fury.io/rb/pebbles-tokyu_ruby_kaigi.png)](http://badge.fury.io/rb/pebbles-tokyu_ruby_kaigi)
 [![Build Status](https://travis-ci.org/sue445/pebbles-tokyu_ruby_kaigi.png)](https://travis-ci.org/sue445/pebbles-tokyu_ruby_kaigi)
 [![Coverage Status](https://coveralls.io/repos/sue445/pebbles-tokyu_ruby_kaigi/badge.png)](https://coveralls.io/r/sue445/pebbles-tokyu_ruby_kaigi)
-[![Dependency Status](https://gemnasium.com/sue445/pebbles-tokyu_ruby_kaigi.png)](https://gemnasium.com/sue445/pebbles-tokyu_ruby_kaigi)
 [![Code Climate](https://codeclimate.com/github/sue445/pebbles-tokyu_ruby_kaigi.png)](https://codeclimate.com/github/sue445/pebbles-tokyu_ruby_kaigi)
 
 ## Definition of TokyuRubyKaigi
