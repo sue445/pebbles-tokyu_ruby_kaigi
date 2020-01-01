@@ -27,6 +27,8 @@ matrix:
   include:
     - rvm: 2.6
       env: RSPEC_RUBYOPT="--jit"
+    - rvm: 2.7
+      env: RSPEC_RUBYOPT="--jit"
     - rvm: ruby-head
       env: RSPEC_RUBYOPT="--jit"
   
